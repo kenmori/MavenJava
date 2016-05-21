@@ -1,6 +1,4 @@
 package Maventest.Maventest;
-
-
 /**
  * Hello world!
  *
@@ -17,18 +15,11 @@ public class App
         	 * 宣言がコンテキストの外側宣言→引数として渡す
         	 * 
         	 * */
-    		if(isPrimeNumber(testNumber)){
+    		//切り出したclassからのアクセスにする
+    		if(PrimeNumberCalculator.isPrimeNumber(testNumber)){
         		System.out.println(testNumber);
         	}
     	}
 
-    }
-    private static boolean isPrimeNumber(int testNumber){
-   		for (int i = 2; i < testNumber; i++){
-			if(testNumber % i == 0){
-				return false;
-			}
-		}
-    	return true;
     }
 }
