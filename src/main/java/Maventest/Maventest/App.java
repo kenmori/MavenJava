@@ -15,11 +15,17 @@ public class App
         	 * 宣言がコンテキストの外側宣言→引数として渡す
         	 * 
         	 * */
+    		//機能的なメソッドの中から数学的なメソッドを別クラスのメソッドとして切り出す
     		//切り出したclassからのアクセスにする
     		if(PrimeNumberCalculator.isPrimeNumber(testNumber)){
         		System.out.println(testNumber);
         	}
+    		//System.out.println("sayHello");
+    		sayHello();
     	}
-
     }
+    //メソッドとして切り出し
+    private static void sayHello(){
+		System.out.println("sayHello");
+	}
 }
