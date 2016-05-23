@@ -10,9 +10,11 @@ public class EnumMain {
 	}
 	public static void greet(Weekday weekday){
 		if(weekday == Weekday.SUNDAY || weekday == Weekday.SATURDAY){
-			System.out.println("羽をのばしましょう");
+			System.out.println(Message.HOLIDAYS);
+		} else if(weekday == Weekday.FRIDAY){
+			System.out.println(Message.FRIDAY);
 		} else {
-			System.out.println("今日は平日です");
+			System.out.println(Message.WEEKDAYS);
 		}
 	}
 
